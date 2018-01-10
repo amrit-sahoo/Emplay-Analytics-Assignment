@@ -1,9 +1,4 @@
-// using factory method
-
-// Factory method uses the returned value of the function,
-// it returns the values
-//of the function returned after the execution
-// 
+//service method
 
 mainApp.service('gitService',function($http){
 
