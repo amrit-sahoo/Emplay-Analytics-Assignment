@@ -1,0 +1,45 @@
+
+<br>
+<br>
+<div class="container">
+	<div class="row">
+		<div class="col-lg-offset-1 col-lg-10 col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+			<div class="jumbotron">
+
+				<div id="searchBox" class="well text-center">
+					<h1>{{searchController.heading}}</h1>
+					<br>
+					<div id="box" class="text-center">
+						<form ng-submit="searchController.getRepository()">
+							 <input type="text" name="query" ng-model="searchController.query" >
+						     <input type="submit"> 
+						</form>
+					</div>
+				</div>
+
+				<div class="row" ng-show="searchController.query" id="options" ng-app="ngAnimate">
+					<div class="col-lg-offset-1 col-lg-10 col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+					    
+						<ul>
+							<div class="names" ng-repeat="repo in searchController.array" >
+								<li>
+								     <h2>Name:{{repo.name}}</h2>
+								     <p>full_Name: {{repo.full_name}}</p>
+								     <p>Owner's_URL:<a href="https://api.github.com/users/{{repo.owner.login}}"> {{repo.owner.url}}</a></p>
+								     <p>Owner's login:{{repo.owner.login}}</p>
+								</li>
+							</div>
+						</ul>
+					</div>
+				</div>
+
+				
+
+			</div>
+		</div>
+	</div>
+
+	
+</div>
+</div>
+
