@@ -1,5 +1,6 @@
 //Controller is defined and the custom service "gitService" is injected in the dependencies.
-//the custom service is made separately to call the API. It can be done in the controller. But as per better industry practice genarally APIs are called in a custom service for better maintaince purpose in the future. 
+/*the custom service is made separately to call the API. It can be done in the controller. 
+But as per better industry practice genarally APIs are called in a custom service for better maintaince purpose in the future. */
 
 mainApp.controller('repoSearch' , ['gitService' , function( gitService){
     
