@@ -1,5 +1,5 @@
 
-
+//The angular js route provider to make the application single page.
 mainApp.config(['$routeProvider' , function($routeProvider){
 
 	$routeProvider.when('/' , {
