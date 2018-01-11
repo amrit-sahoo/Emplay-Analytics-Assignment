@@ -1,6 +1,7 @@
 // using service method
 
-//A custom service is defined for making a request to API. Generally we made custom service for making API request because in future when API changes it become easy to maintain.
+/*A custom service is defined for making a request to API. Generally we made custom service for making 
+API request because in future when API changes it become easy to maintain.*/
 
 
 mainApp.service('gitService',function($http){
